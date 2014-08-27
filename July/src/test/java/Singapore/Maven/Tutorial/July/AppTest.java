@@ -1,5 +1,8 @@
 package Singapore.Maven.Tutorial.July;
 
+import DynamicProxy.MyInvoicationHandler;
+import DynamicProxy.RealSubject;
+import DynamicProxy.Subject;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -34,5 +37,12 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+    
+    
+    public void testInvocation(){
+    	MyInvoicationHandler myInvoicationHandler = new MyInvoicationHandler();
+		Subject sub = (Subject)myInvoicationHandler.bind(new RealSubject());
+		sub.say("OK", "James");
     }
 }
