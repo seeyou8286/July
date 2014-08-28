@@ -1,6 +1,6 @@
 package DynamicProxy;
 
-import org.junit.Test;
+
 
 public class ProxyTester {
 	

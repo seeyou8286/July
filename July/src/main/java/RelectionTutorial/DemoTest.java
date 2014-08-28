@@ -31,7 +31,7 @@ public class DemoTest {
 		
 	}
 	
-//	@Test
+
 	public void testLoad() throws ClassNotFoundException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
 //		Class demo =Class.forName("RelectionTutorial.Demo");		
 //		Class demo =Demo.class;
@@ -61,7 +61,7 @@ public class DemoTest {
 	}
 	
 	
-//	@Test
+
 	public void testChangeFields() throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException{
 		Demo demo = new Demo();
 		Field field = demo.getClass().getDeclaredField("name");
