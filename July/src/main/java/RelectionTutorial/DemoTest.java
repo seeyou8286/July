@@ -10,7 +10,7 @@ import org.junit.Test;
 public class DemoTest {
 	
 	
-	@Test
+
 	public void testDemo() throws ClassNotFoundException, IllegalArgumentException, IllegalAccessException, InvocationTargetException, InstantiationException{
 		Class<Demo>  demo =	Demo.class;
 		System.out.println(demo.getName());
